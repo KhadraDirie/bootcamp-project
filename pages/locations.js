@@ -1,0 +1,1 @@
+//add hall location as objects in an array >>> check recording latest recording for an example
