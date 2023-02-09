@@ -2,6 +2,7 @@ import React from 'react'
 
 function Skills(props) {
   
+  
     const skills = [
     "JavaScript",
     "React.js",
@@ -11,9 +12,10 @@ function Skills(props) {
   ]
   const skillsList = () => {
     return (
+   
       <ul> 
         {skills.map(skill => (
-          <li className='bg bg-pink-100 font-bold list-outside ml-10' key={skill}>{skill}</li>
+          <li className='text-gray-800 font-semibold list-outside ml-10 list-disc ' key={skill}>{skill}</li>
         ))}
       </ul>
     );

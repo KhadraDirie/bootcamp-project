@@ -2,31 +2,46 @@ import React from "react"
 import Hero from "../components/Homepage/Hero"
 import Bio from "../components/Homepage/Bio"
 import Skills from "../components/Homepage/Skills"
-import Link from "next/link";
 import Image from "next/image";
+import Navbar from "../components/Homepage/Navbar"
 
 
-function index() {
- return (
+
+export default function Home() {
+
+
+  // const handleClick = () => {
+  //   alert("you clicked the button!");
+
+  return (
   <div>
- <nav className="flex items-center justify-between p-6 bg-gray-500 text-left ">
-      <ul className= "flex items-center space-x-4 font-medium  bg-gray-500 ">
-        <li><Link className="text-black hover:text-gray-500 bg-blend-normal "href="/" >Home</Link></li> 
-        <li><Link className="text-black hover:text-gray-500" href="/Locations">Locations</Link></li>
-        <li><Link className="text-black hover:text-gray-500" href="/Search Location">Search Location</Link></li>
-      </ul>
-    </nav> 
+
+       <Navbar /> 
+       
+       <div className="flex flex-col space-y-4 ">
+
+      <Hero name = "Khadra Dirie "  title = "Junior Software Developer"/>
+     
+     <Image className="px-2 content-center ml-10 m5 rounded-full" src="/assets/img.jpg" alt="Image" width ={300} height={300} />
+      
+     <h1 className="text-2xl font-semibold ml-10">Bio:</h1>
+      <Bio className='rounded-xl ml-10 justify-evenly' mybio = " Hi, my name is Khadra and I am currently enrolled on a Software Development Bootcamp"/>
     
-    <div className="flex flex-col space-y-4 ">
-        
-      <Hero name = "Khadra Dirie "  title = "Junior Software Developer" image ="./images/me.jpg" alt ="Image"/>
-      <Image src="/images/img.jpg" alt="Image" width ={300} height={300}/>
-      <Bio mybio = " Hello, my name is Khadra and I am currently enrolled on a Software Development Bootcamp learning how to code"/>
-    
+      <h1 className="text-xl font-semibold ml-10 underline-offset-4">Skills:</h1>
       <Skills />
+
+      {/* <div>
+          <button
+              className="bg-blue-500 px-2 py-1 rounded"
+              onClick={handleClick}
+            >
+              Click me
+            </button>
+         </div> */}
+
+     
     </div>
     </div>
   )
-}
+  }
 
-export default index
