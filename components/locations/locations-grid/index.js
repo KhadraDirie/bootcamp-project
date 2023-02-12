@@ -1,24 +1,23 @@
-import LocationItem from "./location-item"
-import { locations } from "../components/locations/locations-grid/locations";
+import React from "react";
+import LocationItem from "./location-item";
+import { locations } from "./locations";
+
 
 
 function LocationsGrid() {
- 
-
-
-
-    return (
+  return (
     
-      <div className="w-full grid grid-cols-3 gap-4">
+       <div className="w-full grid grid-cols-3 gap-4">
         {locations.map((location) =>(
-            <LocationItem 
-            title={locations.title}
-            date = {locations.date}
-            imgUrl = {locations.imgUrl}/>
+           <LocationItem
+            title={location.title}
+            date = {location.date}
+            imgUrl = {location.imgUrl}
+            />
         ))}
-      </div>
-    
+    </div>
   )
 }
 
 export default LocationsGrid
+

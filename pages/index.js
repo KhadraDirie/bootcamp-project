@@ -25,6 +25,10 @@ export default function Home() {
     
       <h1 className="text-xl font-semibold ml-10 underline-offset-4">Skills:</h1>
       <Skills />
+      
+      <a href="/locations-page">
+        Go To Locations Page 
+      </a>
 
       {/* <div>
           <button

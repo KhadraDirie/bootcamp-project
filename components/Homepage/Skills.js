@@ -15,7 +15,7 @@ function Skills(props) {
    
       <ul> 
         {skills.map(skill => (
-          <li className='text-gray-800 font-semibold list-outside ml-10 list-disc ' key={skill}>{skill}</li>
+          <li className='text-white font-semibold list-outside ml-10 list-disc ' key={skill}>{skill}</li>
         ))}
       </ul>
     );
