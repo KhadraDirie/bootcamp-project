@@ -9,10 +9,6 @@ import Navbar from "../components/Homepage/Navbar"
 
 export default function Home() {
 
-
-  // const handleClick = () => {
-  //   alert("you clicked the button!");
-
   return (
   <div>
 
