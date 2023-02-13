@@ -14,9 +14,9 @@ export default function LocationItem({ title,date,imgUrl }) {
     return (
        
         <div className="border rounded-lg p-4">
-            <img src={imgUrl} className="rounded-lg" />
-            <h3 className="text-xl font-medium">{title}</h3>
-            <p className="text-gray-700">{date}</p>
+            <img src={imgUrl} className="rounded-lg w-200 h-200" />
+            <h3 className="text-xl font-medium text-white">{title}</h3>
+            <p className="text-white">{date}</p>
             <button
                 onClick={handleLike}
                 type="button"
@@ -24,6 +24,7 @@ export default function LocationItem({ title,date,imgUrl }) {
             >
                 Like ({likes} likes)
             </button>
+            
         </div>
     )
 }
