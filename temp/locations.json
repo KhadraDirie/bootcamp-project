@@ -1,0 +1,21 @@
+ 
+ [
+    {
+      "id": "1",
+      "title": "Paris",
+      "date": "March 2019",
+      "img_url": "/assets/paris.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Bali",
+      "date": "August 2019",
+      "img_url": "/assets/bali.jpg"
+    },
+    { 
+      "id": "3",
+      "title": "New York City",
+      "date": "September 2022",
+      "img_url": "/assets/nyc.jpg"
+    }
+  ]

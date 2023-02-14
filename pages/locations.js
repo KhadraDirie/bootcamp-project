@@ -1,5 +1,10 @@
-//returns the entire list of locations 
-export const locations = [
+import sql from "../utils/postgres";
+
+export default function handler(req,res){
+
+    
+
+const locations = [
     {
       id: "1",
       title: "Paris",
@@ -12,11 +17,14 @@ export const locations = [
       date: "August 2019",
       imgUrl: "/assets/bali.jpg"
     },
-    {
+    { 
       id: "3",
       title: "New York City",
       date: "September 2022",
       imgUrl: "/assets/nyc.jpg"
     }
   ];
+res.json(locations)
+
+}
   

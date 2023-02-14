@@ -1,12 +1,11 @@
 
 //get a single location from database
 //we can access locationId depending on what the user clicks 
-
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Hero from "@/components/Homepage/Hero"
 
-//how can we query this  and get it from our list of locations so we can data for each location
+
 export default function SingleLocation() {
    const router = useRouter();
    const [location, setLocation] = useState(null)
@@ -20,12 +19,16 @@ export default function SingleLocation() {
    },[locationId]);
 
    const getLocation = async(id) =>{
-   const response = await fetch (`/api/location-by-id?id=${id}`);
-   const data =  await response.json();
-   const { location } = data;
-   setLocation(location);
-
- } 
+  try {
+    const response = await fetch(`/api/location-by-id?id=${id}`);
+    const data = await response.json();
+    const {location} = data;
+    setLocation(location);
+  } catch (error) {
+    console.log(error);
+  
+  }
+}
   console.log(location);
   
   if (!location){
@@ -34,8 +37,6 @@ export default function SingleLocation() {
 
   )
 }
-
-
 
   return (
 
