@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react'
 import Hero from "@/components/Homepage/Hero"
 
 
+
+
 export default function SingleLocation() {
    const router = useRouter();
    const [location, setLocation] = useState(null)

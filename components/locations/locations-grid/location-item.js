@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import { Header } from "next/dist/lib/load-custom-routes";
+
 
 export default function LocationItem({ title,date,imgUrl }) {
     const [likes, setLikes] = useState(0);
