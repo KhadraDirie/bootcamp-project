@@ -1,20 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
+
 import LocationsGrid from '../components/locations/locations-grid'
 import LocationForm from '../components/locations/form'
 
 function LocationsPage() {
   return (
     <div>
-    <div>
-       <nav>
-        <ul className="flex ml-4  p-6 text-2xl justify-end py-2">
-       <li><Link className="inline-block p-4 font-bold text-white hover:text-gray-500" href="/Home">Home</Link></li>
-        <li><Link className="inline-block p-4 font-bold text-white  hover:text-gray-500" href="/locations-page">Locations</Link></li>
-        <li><Link className="inline-block p-4 font-bold text-white  hover:text-gray-500" href="/search-locations">Search Locations</Link></li>
-        </ul>
-      </nav>
-      </div>
+    
   
 
     <div className='text-5xl text-white font-bold p-5'>
@@ -29,6 +21,11 @@ function LocationsPage() {
     <div>
       <LocationForm />
     </div>
+
+    <a className='font-bold text-white'  href="/search-locations">
+        Go To Search Locations
+      </a>
+
   </div>
   )
 }
