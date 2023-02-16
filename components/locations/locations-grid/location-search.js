@@ -16,7 +16,7 @@ function LocationSearch() {
         />
         </form>
         <div className='mb-4 py-4' type='submit'>
-<button className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
+<button className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Search</button>
 </div>
     </div>
   )

@@ -23,7 +23,7 @@ function LocationsPage() {
     </div>
 
     <a className='font-bold text-white'  href="/search-locations">
-        Go To Search Locations
+        Search Locations
       </a>
 
   </div>

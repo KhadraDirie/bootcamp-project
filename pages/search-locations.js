@@ -6,6 +6,10 @@ function SearchLocations() {
     <div>
        
       <LocationSearch />
+
+      <a className="text-white font-semibold"  href="/contact">
+        Contact
+      </a>
     </div>
   )
 }

@@ -49,7 +49,7 @@ export default function SingleLocation() {
         <h1 className='text-4xl m-8'>{location.title}</h1>
         <p className='text-2xl m-8 py-2'>{location.date}</p>
       </div>
-      <button className='py-2 m-8 bg-rose-500 hoover:bg-rose-700 text-white font-bold px-4 rounded'>Back to Homepage</button>
+    
    
    </div>
     
