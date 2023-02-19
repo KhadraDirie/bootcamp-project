@@ -1,4 +1,7 @@
 
+//CONTACT PAGE WITH AN API ENDPOINT
+
+
 import Header from "../components/shared/header"
 import Content from "../components/shared/content"
 import Footer from "../components/shared/footer"
@@ -8,6 +11,7 @@ export default function Contact(){
     const [name,setName] = useState("") // state to hold the value of name.email and message while user interacts with form
     const [email,setEmail] = useState("")
     const [message,setMessage] = useState("")
+    const [showSuccess,setShowSuccess] = useState(false)
 
     const handleChangeName= (event) => {
         const name = event.target.value
@@ -32,9 +36,10 @@ export default function Contact(){
        
 
 
-       setName  ("") // 
+       setName  ("") // when form is submitted and page refreshes the inputs are cleared
        setEmail ("")
        setMessage ("")
+       setShowSuccess(true)
 
 
       } 
@@ -85,6 +90,15 @@ export default function Contact(){
 type="button"
 onClick={handleSubmit} 
 className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
+
+{showSuccess === true ?
+(<p className="text-white w-96 py-4">
+    Your message was sent!
+</p>)
+:
+null}  
+
+
 </div>
  </Content>
 
