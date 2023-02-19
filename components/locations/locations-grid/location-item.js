@@ -14,7 +14,7 @@ export default function LocationItem({ title,date,imgUrl }) {
     return (
        
         <div className="border rounded-lg p-4">
-            <img src={imgUrl} className="rounded-lg w-200 h-200" />
+            <img src={imgUrl} className="rounded-lg w-176 " />
             <h3 className="text-xl font-medium text-white">{title}</h3>
             <p className="text-white">{date}</p>
             <button

@@ -16,7 +16,7 @@ export default function Contact(){
     const handleChangeName= (event) => {
         const name = event.target.value
         setName(name)
-    } // when the value it targets the setName state which will cause react to rerender the value which is being displayed inside the name area
+    } // when the value changes it targets the setName state which will cause react to rerender the value which is being displayed inside the name area
 
     const handleChangeEmail= (event) => {
         const email = event.target.value
@@ -45,7 +45,7 @@ export default function Contact(){
       } 
     return(
         <div className="w-full">
-            <Header name = "Contact"/>
+             <Header name = "Contact"/>
 
             <Content>
                 <div>

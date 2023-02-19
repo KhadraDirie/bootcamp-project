@@ -1,25 +1,18 @@
+import skills from "./skills";
 
-import skills from "./skills"
-
-export default function Skills (){
-    return(
-        
-        <div className="w-full flex flex-col mt-5 mb-10">
-            <h3 className="font-semibold text-2xl text-rose-300 font-semibold px-8">
-                Topics covered in this course: 
-            </h3>
-            <div>
-            <ul className=" text-white m-8 font-medium px-8 list-disc">
-               {skills.map((skill) => {
-                return <li>{skill}</li>
-
-               })}
-               
-
-            </ul>
-            </div>
-            </div>
-     
-
-    )
+export default function Skills() {
+  return (
+    <div className="w-full flex flex-col mt-5 mb-8">
+      <h3 className="font-semibold text-2xl text-white font-semibold px-8 py-5">
+        Topics covered in this course
+      </h3>
+      <div className="bg-rose-300 rounded-lg p-5 ">
+        <ul className="list-none">
+          {skills.map((skill) => {
+            return <li className="text-white font-medium py-2 px-3">{skill}</li>;
+          })}
+        </ul>
+      </div>
+    </div>
+  );
 }

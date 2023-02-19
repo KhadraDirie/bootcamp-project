@@ -6,7 +6,7 @@ function LocationForm() {
   
 
  const handleSubmit = (onClick) =>{
-  alert("button clicked")
+  alert("Location added!")
 
  }
     
@@ -21,7 +21,7 @@ function LocationForm() {
         type="text"
         name='location'
         placeholder='Location'
-        className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+        className='bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-rose-500'
         tabIndex='1' />
         
         
@@ -30,7 +30,7 @@ function LocationForm() {
         type ="text"
         name='date'
         placeholder='Date'
-        className='bg-gray-200 appearance-none border-2 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-purple-500'
+        className='bg-gray-200 appearance-none border-2 rounded w-full py-2 px-4 text-black leading-tight focus:outline-none focus:bg-white focus:border-rose-500'
         tabIndex='2' />
     </form>
     </div>
