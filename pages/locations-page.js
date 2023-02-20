@@ -22,8 +22,8 @@ function LocationsPage() {
       <LocationForm />
     </div>
 
-    <a className='font-bold text-white'  href="/search-locations">
-        Search Locations
+    <a className='font-bold text-white p-5'  href="/search-locations">
+        Go to search location
       </a>
 
   </div>

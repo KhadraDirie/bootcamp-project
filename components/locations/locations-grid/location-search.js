@@ -3,10 +3,10 @@ import React from 'react'
 function LocationSearch() {
 
   return (
-    <div>
-      <h1 className='text-5xl text-white font-semibold p-5'
-      >Search Location...</h1>
-        <form className='form mb-4 w-1/2'>
+    <div className='p-5'>
+      <h1 className='text-5xl text-white font-semibold py-5'
+      >Search Location</h1>
+        <form className='form mb-4 w-1/4 p-'>
         <label className='block text-white font-medium mb-2' for="location"></label>
         <input 
         type="text"

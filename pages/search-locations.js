@@ -7,8 +7,8 @@ function SearchLocations() {
        
       <LocationSearch />
 
-      <a className="text-white font-semibold"  href="/contact">
-        Contact
+      <a className="text-white font-semibold p-5"  href="/contact">
+        Go to contact page
       </a>
     </div>
   )
