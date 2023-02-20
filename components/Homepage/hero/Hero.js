@@ -13,13 +13,13 @@ export default function ({title,subtitle,imgUrl}){
 </div>  
                 <div className="w-full text-center md:text-lef">
                     <h1
-                        className={`font-bold text-7xl text-rose-400 p-4 
+                        className={`font-bold text-8xl text-rose-400 p-4 
                         
                         `}
                     >
                         {title}
                     </h1>
-                    <p className="text-2xl text-white m-8 font-bold">{subtitle}</p>
+                    <p className="text-3xl text-white m-8 font-bold">{subtitle}</p>
                 </div>
 
     </div>

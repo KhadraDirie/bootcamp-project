@@ -3,7 +3,7 @@ import skills from "./skills";
 export default function Skills() {
   return (
     <div className="w-full flex flex-col mt-5 mb-8">
-      <h3 className="font-semibold text-2xl text-white font-semibold px-8 py-5">
+      <h3 className="font-semibold text-2xl text-white font-semibold  p-3">
         Topics covered in this course
       </h3>
       <div className="bg-rose-300 rounded-lg p-5 ">

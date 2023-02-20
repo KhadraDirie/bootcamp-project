@@ -10,7 +10,7 @@ function LocationsPage() {
   
 
     <div className='text-5xl text-white font-bold p-5'>
-        Locations
+        Locations 
     </div>
     <p className='text-white m-5 font-semi-bold text-1xl'>In my spare time i like to travel.Below are some of the places i have traveled to.</p>
     <p className='text-white m-5 font-semi-bold text-1xl'>Share your travels by adding a location using the form below! </p>

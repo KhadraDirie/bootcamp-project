@@ -29,6 +29,7 @@ export default function Contact(){
         setMessage(message) 
     }
 
+    
     const handleSubmit = async (event) =>{ 
         const response = await fetch (`/api/contact?name=${name}&email=${email}&message=${message}`)
         const data = await response.json();
