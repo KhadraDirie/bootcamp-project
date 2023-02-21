@@ -1,6 +1,7 @@
 
 
 import { useState } from "react";
+import Link from "next/link";
 
 
 export default function LocationItem({ title,date,imgUrl }) {
@@ -15,7 +16,9 @@ export default function LocationItem({ title,date,imgUrl }) {
       
         <div className="border rounded-lg p-2 m-2  ">
             <img src={imgUrl} className=" rounded-lg lg:h-96 md:h-36 w-full object-cover object-center " />
-            <h3 className="tracking-widest text-lg title-font font-medium text-black mb-1">{title}</h3>
+            <a className="rounded-lg lg:h-96 md:h-36 w-full object-cover object-center" href="/single-location/1">{title}</a>
+            
+
             <p className="tracking-widest text-md title-font font-small text-black mb-1">{date}</p>
             <button
                 onClick={handleLike}

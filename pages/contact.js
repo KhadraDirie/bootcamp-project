@@ -81,7 +81,7 @@ export default function Contact(){
             <Content>
                 <div>
 
-                <form className='form mb-4 py-5'>
+                <form className='form mb-4 py-5 '>
   <div className="flex flex-col">
     <div className="mb-4">
       <Input
