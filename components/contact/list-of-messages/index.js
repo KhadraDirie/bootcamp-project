@@ -1,24 +1,12 @@
-import { useEffect, useState } from "react"
 
-export default function ListOfMessages(){
+export default function ListOfMessages({isLoading,messages}){
 
-    const [messages,setMessages] = useState([]);
-    useEffect(() => {
-        getMessages() //gets messages from the api endpoint once the component loads for te first time
 
-    }, [])
 
-    //call a function that will allow us to  get a list of messages 
-    const getMessages = async () => {
-        const response = await fetch (`/api/contact-messages`);
-        const data = await response.json();
 
-        const {messages} = data;
-        console.log(messages)
-        setMessages(messages);
-    }
+    if (isLoading){
 
-    return(
+      return(
 
         <div className="w-full grid grid-cols-3 gap-4 mt-10 ">
             <div className ='bg-gray-300 py-3 px-6 rounded h-40 animate-pulse' />
@@ -28,9 +16,12 @@ export default function ListOfMessages(){
     </div>
         
     )
+        
+    }
+    
      
     return(
-        <div className="w-full grid grid-col-3 gap-4 mt-10">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             {messages.map((message,index) => (
                 <div key={index} className ='bg-gray-300 py-3 px-6 rounded'>
                     <p className="font-medium">Name: {message.name}</p> 

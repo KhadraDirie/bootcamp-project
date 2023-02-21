@@ -1,3 +1,6 @@
+// retrieves existing data from a database table.
+
+
 import sql from "../../utils/postgres";
 
 export default async function handler (req,res){
@@ -5,5 +8,5 @@ export default async function handler (req,res){
     select * from contact_messages 
 `;
 
-res.json({messages:messages});
+res.json({messages:messages}); 
 }

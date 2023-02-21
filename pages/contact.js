@@ -5,9 +5,8 @@
 import Header from "../components/shared/header"
 import Content from "../components/shared/content"
 import Footer from "../components/shared/footer"
-import { useState } from "react"
+import { useState,useEffect } from "react"
 import Input from "../components/form/input"
-import listOfMessages from "../components/contact/list-of-messages"
 import ListOfMessages from "../components/contact/list-of-messages"
 
 export default function Contact(){
@@ -15,6 +14,31 @@ export default function Contact(){
     const [email,setEmail] = useState("")
     const [message,setMessage] = useState("")
     const [showSuccess,setShowSuccess] = useState(false)
+    const [messages,setMessages] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        getMessages() //gets messages from the api endpoint once the component loads for te first time
+
+    }, [])
+
+    //call a function that will allow us to  get a list of messages 
+    const getMessages = async () => {
+        setIsLoading(true);
+        const response = await fetch (`/api/contact-messages`);
+        const data = await response.json();
+
+        const {messages} = data;
+        console.log(messages)
+        setMessages(messages);
+        setTimeout(() =>{
+            setIsLoading(false) //once we have  our data 
+
+        },3000) //delays the component from being rendered by 3 secs then sets the loading to false
+
+
+        
+    }
 
     const handleChangeName= (value) => {
         const name = value
@@ -45,6 +69,7 @@ export default function Contact(){
        setEmail ("")
        setMessage ("")
        setShowSuccess(true)
+       getMessages(); //whenever something is submitted it will show the loader and add it to the list of messages
 
 
       } 
@@ -105,7 +130,7 @@ null}
 
    
 </div>
-<ListOfMessages />  
+<ListOfMessages  isLoading={isLoading} messages={messages}/>  
  </Content>
 
  <Footer href = "/"

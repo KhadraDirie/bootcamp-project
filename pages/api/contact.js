@@ -1,3 +1,6 @@
+//add new data to a database table
+
+
 import sql from "../../utils/postgres";
 
 export default async function handle (req,res){
