@@ -1,7 +1,9 @@
 import React from 'react'
 import LocationSearch from '../components/locations/locations-grid/location-search'
 
-function SearchLocations() {
+
+export default function SearchLocations(){
+
   return (
     <div>
        
@@ -15,6 +17,5 @@ function SearchLocations() {
     
     </div>
   )
-}
 
-export default SearchLocations
+}

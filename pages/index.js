@@ -20,7 +20,7 @@ export default function Home() {
     
        <MyBio 
        
-       bio='I am a career changer with a legal background, having studied law at university. However, in early 2021, I picked up coding and found myself really enjoying it. Since then, I have completed a few introductory coding courses as well as some self-learning and decided that I want to make the switch into the tech industry. I am currently taking part in a software development bootcamp that will equip me with the necessary skills and experience to land my first role in tech as a developer. I am committed to learning and growing in this field and excited for what the future holds.' 
+       bio='I am a career changer with a legal background, having studied law at university. However, in early 2021, I picked up coding and found myself really enjoying it. Since then, I have completed a few introductory coding courses as well as some self-learning and decided that I want to make the switch into the tech industry. I am currently taking part in a software development bootcamp that will equip me with the necessary skills and experience to land my first role in tech as a  junior developer. I am committed to learning and growing in this field and excited for what the future holds.' 
      />
      
 

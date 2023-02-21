@@ -7,6 +7,8 @@ import Content from "../components/shared/content"
 import Footer from "../components/shared/footer"
 import { useState } from "react"
 import Input from "../components/form/input"
+import listOfMessages from "../components/contact/list-of-messages"
+import ListOfMessages from "../components/contact/list-of-messages"
 
 export default function Contact(){
     const [name,setName] = useState("") // state to hold the value of name.email and message while user interacts with form
@@ -29,11 +31,15 @@ export default function Contact(){
         setMessage(message) 
     }
 
-    
     const handleSubmit = async (event) =>{ 
         const response = await fetch (`/api/contact?name=${name}&email=${email}&message=${message}`)
         const data = await response.json();
-      
+
+        let payload = {
+          name:name,
+          email: email,
+          message: message
+        }
 
        setName  ("") // when form is submitted and page refreshes the inputs are cleared
        setEmail ("")
@@ -42,8 +48,9 @@ export default function Contact(){
 
 
       } 
+
     return(
-        <div className="w-full py-5">
+        <div className="w-full py-5 ">
              <Header name = "Contact"/>
 
             <Content>
@@ -79,13 +86,15 @@ export default function Contact(){
   </div>
 </form>
 
+
+
     </div>
   
 <div className='mb-4 py-4' type='submit'>
 <button 
 type="button"
 onClick={handleSubmit} 
-className='bg-rose-500 hover:bg-rose-700 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
+className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
 
 {showSuccess === true ?
 (<p className="text-black w-96 py-4">
@@ -94,14 +103,16 @@ className='bg-rose-500 hover:bg-rose-700 text-black font-medium py-2 px-4 rounde
 :
 null}  
 
-
+   
 </div>
+<ListOfMessages />  
  </Content>
 
-
+ <Footer href = "/"
+ />
             
             
-            <Footer className="text-white" title= "Home" href="/" />
+        
 
         </div>
     )

@@ -16,7 +16,8 @@ function LocationsPage() {
     </div>
     
     <p className='tracking-widest text-md title-font font-medium text-black mb-1 m-5 '>In my spare time i like to travel.Below are some of the places i have traveled to.</p>
-    <p className='tracking-widest text-md title-font font-medium text-black mb-1 m-5 '>Share your travels by adding a location using the form below like which location you want to visit! </p>
+    <p className='tracking-widest text-md title-font font-medium text-black mb-1 m-5 '>Share your travels by adding a location using the form below! </p>
+    <p className='tracking-widest text-md title-font font-medium text-black mb-1 m-5'>Dont forget to like which location you want to visit!</p>
 
     <div>
         <LocationsGrid />
