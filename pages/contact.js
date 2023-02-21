@@ -85,10 +85,10 @@ export default function Contact(){
 <button 
 type="button"
 onClick={handleSubmit} 
-className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
+className='bg-rose-500 hover:bg-rose-700 text-black font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
 
 {showSuccess === true ?
-(<p className="text-white w-96 py-4">
+(<p className="text-black w-96 py-4">
     Your message was sent!
 </p>)
 :

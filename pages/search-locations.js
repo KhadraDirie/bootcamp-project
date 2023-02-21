@@ -6,10 +6,13 @@ function SearchLocations() {
     <div>
        
       <LocationSearch />
-
-      <a className="text-white font-semibold p-5"  href="/contact">
+      <div className='m-5'>
+          <a className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline' href="/contact">
         Go to contact page
       </a>
+      </div>
+
+    
     </div>
   )
 }

@@ -13,7 +13,7 @@ function LocationsGrid() {
   
   return (
     
-       <div className="w-full grid grid-cols-3 gap-">
+       <div className="w-full grid grid-cols-3 p-4">
         {locations.map((location) =>(
            <LocationItem
             title={location.title}

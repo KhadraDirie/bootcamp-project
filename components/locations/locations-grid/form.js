@@ -12,11 +12,11 @@ function LocationForm() {
     
   
   return (
-    <div className='container text-white bg-black p-6 rounded-lg w-1/2'>
+    <div className='container text-black p-6 rounded-lg w-1/2'>
     <div>
-    <h1 className='text-4xl p-5'>Add Your Location</h1>
+    <h1 className='tracking-widest text-md title-font text-3xl text-black mb-1 m-5 '>Add Your Location</h1>
     <form className='form mb-4'>
-        <label className='block text-white font-medium mb-2' for="location"></label>
+        <label className='block text-black font-medium mb-2' for="location"></label>
         <input 
         type="text"
         name='location'
@@ -25,7 +25,7 @@ function LocationForm() {
         tabIndex='1' />
         
         
-        <label className='block text-white font-medium mb-2 py-1' for='date'></label>
+        <label className='block text-black font-medium mb-2 py-1' for='date'></label>
         <input
         type ="text"
         name='date'
@@ -44,9 +44,3 @@ function LocationForm() {
 
 
 export default LocationForm
-
-
-
-   
-
-
