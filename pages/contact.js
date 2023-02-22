@@ -133,7 +133,7 @@ null}
 <ListOfMessages  isLoading={isLoading} messages={messages}/>  
  </Content>
 
- <Footer href = "/"
+ <Footer title= "Go back to home" href = "/"
  />
             
             
