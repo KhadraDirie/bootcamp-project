@@ -119,7 +119,7 @@ export default function Contact(){
 <button 
 type="button"
 onClick={handleSubmit} 
-className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'>Submit</button>
+className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline w-1/3'>Submit</button>
 
 {showSuccess === true ?
 (<p className="text-black w-96 py-4">
