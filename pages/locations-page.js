@@ -1,6 +1,7 @@
 import React from 'react'
 
 import LocationsGrid from '../components/locations/locations-grid'
+// import LocationForm from '../components/locations/locations-grid/location-form/form'
 
 
 
@@ -20,7 +21,9 @@ import LocationsGrid from '../components/locations/locations-grid'
 
     <div>
         <LocationsGrid />
+        
     </div>
+   
   
 <div className='m-5 py-4'>
   <a className='bg-rose-500 hover:bg-rose-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline'  href="/contact">
