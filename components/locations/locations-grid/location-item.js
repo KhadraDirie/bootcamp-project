@@ -1,11 +1,16 @@
 
-
+//database persist data, long term memory
+//setting likes in state =  short term memory 
 import { useState } from "react";
+
+
 
 
 
 export default function LocationItem({imgUrl,title,date}) {
     const [likes, setLikes] = useState(0);
+
+    
 
     const handleLike = () => {
         let newLikes = likes + 1;

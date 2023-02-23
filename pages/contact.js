@@ -73,7 +73,7 @@ export default function Contact(){
 
 
       } 
-
+  
     return(
         <div className="w-full py-5 ">
              <Header name = "Contact"/>
