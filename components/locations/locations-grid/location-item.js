@@ -15,13 +15,17 @@ export default function LocationItem({location}) {
 
     
 
-    const handleLike = () => {
+    const handleLike = async () => {
         let newLikes = likes + 1;
+        const id = +location.id
+        const response = await fetch (`/api/increase-likes?id=${id}&likes=${newLikes}`)
+        const data = await response.json()
         setLikes(newLikes);
     }
+    //when user click likes the async function is liked, the new number of likes is calculated, and then find out what the id of the particular book, we know what that is because inside the book item ww're passing in  a property called locations which contains the id
+    //we then make a call to the api endpoint
 
-    // const id = +book.id;
-    // const response = await fetch (api/)
+  
 
     return (
       
