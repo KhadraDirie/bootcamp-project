@@ -1,0 +1,42 @@
+
+
+[
+    {
+        "id": "lake como",
+        "title": "Lake Como",
+        "visited_date": "September 2022",
+        "img_url": "/assets/manchester.png"
+    },
+
+    
+    {
+        "id": "sydney",
+        "title": "Sydney",
+        "visited_date": "Last year",
+        "img_url": "/assets/singapore.png"
+    },
+    {
+        "id": "seoul",
+        "title": "Seoul",
+        "visited_date": "Jan 2022",
+        "img_url": "/assets/san-francisco.png"
+    },
+    {
+        "id": "tokyo",
+        "title": "Tokyo",
+        "visited_date": "March 2019",
+        "img_url": "/assets/hong-kong.png"
+    },
+    {
+        "id": "zanzibar",
+        "title": "Zanzibar",
+        "visited_date": "Jul 2017",
+        "img_url": "/assets/paris.png"
+    },
+    {
+        "id": "qatar",
+        "title": "Qatar",
+        "visited_date": "May 2021",
+        "img_url": "/assets/new-york.png"
+    }
+]
