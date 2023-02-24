@@ -1,25 +1,30 @@
 import React, { useEffect, useState } from "react";
 import LocationItem from "./location-item";
-import { locations } from "./locations";
 
 
 
 function LocationsGrid() {
+  const [locations, setLocations] = useState([]);
+
 
   useEffect(() =>{
+    getLocations()
 
   },[])
+  
+  const getLocations = async () => {
+    const response = await fetch(`/api/locations`);
+    const data = await response.json();
+    setLocations(data);
+}
 
   
   return (
     
        <div className="w-full grid grid-cols-3 p-4">
-        {locations.map((location) =>(
-           <LocationItem
-            title={location.title}
-            date = {location.date}
-            imgUrl = {location.imgUrl}
-            />
+        {locations.map((location, index) => (
+           <LocationItem key={index} location={location} />
+          
         ))}
     </div>
   )
