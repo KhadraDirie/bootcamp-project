@@ -4,8 +4,7 @@
 import sql from "../../utils/postgres";
 
 export default async function handle (req,res){
-    const {name,email, message} = req.query; // add these values into database
-    
+    const{name,email,message} = req.body
     const response = await sql`
     insert into contact_messages
          (name, message, email)

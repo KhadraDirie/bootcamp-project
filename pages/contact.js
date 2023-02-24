@@ -55,15 +55,23 @@ export default function Contact(){
         setMessage(message) 
     }
 
-    const handleSubmit = async (event) =>{ 
-        const response = await fetch (`/api/contact?name=${name}&email=${email}&message=${message}`)
-        const data = await response.json();
+    const handleSubmit =  async (event) =>{ 
 
         let payload = {
           name:name,
           email: email,
           message: message
         }
+
+        const response = await fetch (`/api/contact`,{
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        })
+
+        const data = await response.json();
 
        setName  ("") // when form is submitted and page refreshes the inputs are cleared
        setEmail ("")
