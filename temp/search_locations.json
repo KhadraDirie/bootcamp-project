@@ -1,0 +1,42 @@
+
+
+[
+    {
+        "id": "lake como",
+        "title": "Lake Como",
+        "visited_date": "September 2022",
+        "img_url": "/assets/lakecomo"
+    },
+
+    
+    {
+        "id": "santorini",
+        "title": "Santorini",
+        "visited_date": "August 2021",
+        "img_url": "/assets/santorini"
+    },
+    {
+        "id": "seoul",
+        "title": "Seoul",
+        "visited_date": "January 2022",
+        "img_url": "/assets/seoul.jpg"
+    },
+    {
+        "id": "kualalumpur",
+        "title": "Kuala Lumpur",
+        "visited_date": "March 2019",
+        "img_url": "/assets/kualalumpur.jpg"
+    },
+    {
+        "id": "zanzibar",
+        "title": "Zanzibar",
+        "visited_date": "July 2017",
+        "img_url": "/assets/zanzibar.jpg"
+    },
+    {
+        "id": "kenya",
+        "title": "kenya",
+        "visited_date": "May 2021",
+        "img_url": "/assets/kenya.jpg"
+    }
+]
