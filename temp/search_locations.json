@@ -5,7 +5,7 @@
         "id": "lake como",
         "title": "Lake Como",
         "visited_date": "September 2022",
-        "img_url": "/assets/lakecomo"
+        "img_url": "/assets/lakecomo.jpg"
     },
 
     
@@ -13,7 +13,7 @@
         "id": "santorini",
         "title": "Santorini",
         "visited_date": "August 2021",
-        "img_url": "/assets/santorini"
+        "img_url": "/assets/santorini.jpg"
     },
     {
         "id": "seoul",
