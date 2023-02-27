@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 
 export default function SearchLocation(){
     const[locations,setLocations] = useState([])
+    const [input,setInput] = useState("");
 
     useEffect(() =>{
         getLocations();
@@ -30,9 +31,13 @@ export default function SearchLocation(){
             </div>
             <Content> 
                 <div className=" w-full md:w-6/12  lg:4-4/12 flex flex-row space-x-2"> 
-                    <Input />
+                    <Input 
+                    value = {input}
+                    onChange ={value => setInput(value)} //everytime something is typed in the search input the value set in state (which is an empty string) updates to whatever is typed in the input
+                    />
                     <button className="bg-rose-500 text-white px-6 py-2 rounded-md"
-                    type ="button"
+                    type ="button" 
+                    
                     >
                         search
                     </button>
