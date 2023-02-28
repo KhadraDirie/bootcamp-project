@@ -24,7 +24,7 @@ export default function SearchLocation(){
     };
 
     const filterLocation = async () =>{
-        if(!input){ //when a search button is cliked it checkes whether the input has a value, it calls the getLocation function which gets all locations, if inout does have a value the expression isnt true so it makes a request to the endpoint and passes in the query paramters of search which returns a filtered set of results
+        if(!input){ //when a search button is clicked it checks whether the input has a value, it calls the getLocation function which gets all locations, if inout does have a value the expression isnt true so it makes a request to the endpoint and passes in the query paramaters of search which returns a filtered set of results
             getLocations();
             return;
         }
@@ -34,6 +34,7 @@ export default function SearchLocation(){
 
     setLocations(data);  
  }
+
 
 
 
