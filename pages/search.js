@@ -24,9 +24,16 @@ export default function SearchLocation(){
     };
 
     const filterLocation = async () =>{
+        if(!input){ //when a search button is cliked it checkes whether the input has a value, it calls the getLocation function which gets all locations, if inout does have a value the expression isnt true so it makes a request to the endpoint and passes in the query paramters of search which returns a filtered set of results
+            getLocations();
+            return;
+        }
         const response = await fetch (`/api/search-locations?search=${input}`)
-    }
+   
+    const data = await response.json();
 
+    setLocations(data);  
+ }
 
 
 
@@ -43,6 +50,7 @@ export default function SearchLocation(){
                     />
                     <button className="bg-rose-500 text-white px-6 py-2 rounded-md"
                     type ="button" 
+                    onClick={filterLocation}
                     
                     >
                         search
