@@ -1,5 +1,5 @@
 import Input from "../components/form/input"
-import LocationItem from "@/components/search/location-item";
+import LocationItem from "../components/search/location-item";
 import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header"
@@ -15,13 +15,18 @@ export default function SearchLocation(){
         
     const getLocations = async () =>{
         try {
-            const response = await fetch('./api/search-locations');
+            const response = await fetch('/api/search-locations');
             const data = await response.json();
             setLocations(data);
         } catch (error) {
             console.error(error);
         }
     };
+
+    const filterLocation = async () =>{
+        const response = await fetch (`/api/search-locations?search=${input}`)
+    }
+
 
 
 
@@ -45,13 +50,11 @@ export default function SearchLocation(){
                    
                 </div>
 
-                <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-  {locations.map((location) => (
-
- <LocationItem key={location.id} location={location} />  ))}
+                <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10"> 
+                {locations.map((location) => (
+  <LocationItem key={location.id} location={location}  />
+))}
 </div>
-
-                  
 
                
             </Content>
