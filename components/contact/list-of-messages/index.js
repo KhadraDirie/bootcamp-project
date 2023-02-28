@@ -1,7 +1,18 @@
 
-export default function ListOfMessages({isLoading,messages}){
+export default function ListOfMessages({isLoading,messages,onDelete}){
 
+    const handleDelete = async (id) => {
+        
+        await fetch(`/api/delete-contact-messages?id=${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
 
+        onDelete()
+    }
+      
 
 
     if (isLoading){
@@ -16,7 +27,7 @@ export default function ListOfMessages({isLoading,messages}){
     </div>
         
     )
-        
+         
     }
     
      
@@ -27,6 +38,16 @@ export default function ListOfMessages({isLoading,messages}){
                     <p className="font-medium">Name: {message.name}</p> 
                     <p className="font-medium text-gray-400 italic ">From: {message.email ? message.email : "No email provided"}</p>
                     <p className="font-medium">Message: {message.message}</p>
+
+                    <button 
+                    type="button"
+                    className={`bg-rose-500 text-white font-medium px-3 py-1 rounded mt-2`}
+                    onClick={() => handleDelete(message.id)}
+                    >
+                        Delete
+
+
+                    </button>
                     </div>
             ))}
         

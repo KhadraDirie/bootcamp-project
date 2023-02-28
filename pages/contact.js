@@ -138,7 +138,11 @@ null}
 
    
 </div>
-<ListOfMessages  isLoading={isLoading} messages={messages}/>  
+<ListOfMessages  isLoading={isLoading} messages={messages}
+ onDelete={getMessages}
+
+
+/>  
  </Content>
 
  <Footer title= "Go back to home" href = "/"
